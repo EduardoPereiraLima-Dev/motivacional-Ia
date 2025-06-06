@@ -68,12 +68,10 @@ Motivacional.IA é uma aplicação web que gera mensagens motivacionais personal
 
 5. Acesse a aplicação em [http://localhost:3000](http://localhost:3000)
 
-## 📁 Estrutura do Projeto
 
-``
 # 📂 Estrutura de Pastas — Motivacional.IA
 
-```bash
+``
 motivacional-ia/
 ├── app/                            # Diretório de rotas e páginas Next.js
 │   ├── api/                        # Rotas de API internas (API Routes)
@@ -93,7 +91,6 @@ motivacional-ia/
 ├── package.json                    # Dependências, scripts e metadata do projeto
 ├── README.md                       # Documentação e instruções do projeto
 └── tailwind.config.ts              # Configuração personalizada do Tailwind CSS
-
 ``
 
 ## 🔄 Integração com o Backend
