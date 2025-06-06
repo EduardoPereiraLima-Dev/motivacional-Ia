@@ -71,10 +71,10 @@ Motivacional.IA é uma aplicação web que gera mensagens motivacionais personal
 
 # 📂 Estrutura de Pastas — Motivacional.IA
 
-``
+````bash
 motivacional-ia/
 ├── app/                            # Diretório de rotas e páginas Next.js
-│   ├── api/                        # Rotas de API internas (API Routes)
+│   ├── api/# Rotas de API internas (API Routes)
 │   │   └── motivational-message/
 │   │       └── route.ts            # API route para geração de mensagens motivacionais
 │   ├── layout.tsx                  # Layout raiz compartilhado da aplicação
