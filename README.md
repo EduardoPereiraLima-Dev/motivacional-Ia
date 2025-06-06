@@ -1,6 +1,6 @@
 # Motivacional.IA
 
-![Motivacional.IA](https://via.placeholder.com/1200x630/5f4def/ffffff?text=Motivacional.IA)
+![Motivacional.IA[]()](https://motivacional-ia-t3fb.vercel.app/)
 
 ## 📝 Descrição
 
@@ -26,7 +26,7 @@ Motivacional.IA é uma aplicação web que gera mensagens motivacionais personal
   - [Zod](https://github.com/colinhacks/zod) - Validação de esquemas TypeScript
 
 - **Backend**:
-  - [FastAPI](https://fastapi.tiangolo.com/) - Framework Python para APIs
+  - [FastAPI](https://github.com/EduardoPereiraLima-Dev/motivacionalia) - Framework Python para APIs
   - API Routes do Next.js para comunicação com o backend
 
 ## 🚀 Instalação e Configuração
@@ -70,7 +70,7 @@ Motivacional.IA é uma aplicação web que gera mensagens motivacionais personal
 
 ## 📁 Estrutura do Projeto
 
-\`\`\`
+``
 motivacional-ia/
 ├── app/
 │   ├── api/
@@ -87,7 +87,7 @@ motivacional-ia/
 ├── package.json               # Dependências e scripts
 ├── README.md                  # Este arquivo
 └── tailwind.config.ts         # Configuração do Tailwind CSS
-\`\`\`
+``
 
 ## 🔄 Integração com o Backend
 
@@ -95,7 +95,7 @@ A aplicação se comunica com um servidor FastAPI para processar as informaçõe
 
 ### Formato da Requisição
 
-\`\`\`json
+``json
 {
   "name": "Nome do usuário",
   "how_you_feel_currently": "Como o usuário se sente atualmente",
@@ -105,16 +105,16 @@ A aplicação se comunica com um servidor FastAPI para processar as informaçõe
   "support_sources": "Fontes de apoio do usuário",
   "personal_care": "Cuidados pessoais do usuário"
 }
-\`\`\`
+``
 
 ### Formato da Resposta
 
-\`\`\`json
+``json
 {
   "nome": "Nome do usuário",
   "mensagem": "Mensagem motivacional personalizada"
 }
-\`\`\`
+``
 
 ### Fallback
 
@@ -142,7 +142,7 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 ## 📞 Contato
 
-Para dúvidas ou sugestões, entre em contato através de [seu-email@exemplo.com](mailto:seu-email@exemplo.com).
+Para dúvidas ou sugestões, entre em contato através de [eduardopereira.lima@yahoo.com](eduardopereira.lima@yahoo.com).
 
 ---
 
