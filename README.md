@@ -91,7 +91,7 @@ motivacional-ia/
 ├── package.json                    # Dependências, scripts e metadata do projeto
 ├── README.md                       # Documentação e instruções do projeto
 └── tailwind.config.ts              # Configuração personalizada do Tailwind CSS
-``
+````
 
 ## 🔄 Integração com o Backend
 
