@@ -71,22 +71,29 @@ Motivacional.IA é uma aplicação web que gera mensagens motivacionais personal
 ## 📁 Estrutura do Projeto
 
 ``
+# 📂 Estrutura de Pastas — Motivacional.IA
+
+```bash
 motivacional-ia/
-├── app/
-│   ├── api/
+├── app/                            # Diretório de rotas e páginas Next.js
+│   ├── api/                        # Rotas de API internas (API Routes)
 │   │   └── motivational-message/
-│   │       └── route.ts       # API Route para comunicação com o backend
-│   ├── layout.tsx             # Layout principal da aplicação
-│   └── page.tsx               # Página principal com o formulário
-├── components/
-│   ├── animated-gradient-text.tsx  # Componente para o título com gradiente animado
-│   └── ui/                    # Componentes de UI reutilizáveis
-├── public/                    # Arquivos estáticos
-├── .env.local                 # Variáveis de ambiente (não versionado)
-├── next.config.js             # Configuração do Next.js
-├── package.json               # Dependências e scripts
-├── README.md                  # Este arquivo
-└── tailwind.config.ts         # Configuração do Tailwind CSS
+│   │       └── route.ts            # API route para geração de mensagens motivacionais
+│   ├── layout.tsx                  # Layout raiz compartilhado da aplicação
+│   └── page.tsx                    # Página inicial com formulário e conteúdo principal
+│
+├── components/                     # Componentes reutilizáveis
+│   ├── animated-gradient-text.tsx  # Título animado com gradiente
+│   └── ui/                         # Componentes de UI reutilizáveis (botões, inputs, etc.)
+│
+├── public/                         # Arquivos estáticos (imagens, favicon, etc.)
+│
+├── .env.local                      # Variáveis de ambiente (não versionado pelo Git)
+├── next.config.js                  # Configuração do Next.js
+├── package.json                    # Dependências, scripts e metadata do projeto
+├── README.md                       # Documentação e instruções do projeto
+└── tailwind.config.ts              # Configuração personalizada do Tailwind CSS
+
 ``
 
 ## 🔄 Integração com o Backend
