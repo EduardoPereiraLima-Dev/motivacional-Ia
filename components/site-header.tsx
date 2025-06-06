@@ -7,8 +7,21 @@ import { useAuth } from "@/contexts/auth-context"
 import { ArrowRight, Sparkles } from "lucide-react"
 
 export function SiteHeader() {
-  const { user } = useAuth()
+  const { user, signInWithGoogle } = useAuth()
   const router = useRouter()
+
+  // Função para tratar o clique do botão "Começar Agora"
+  const handleStartNow = async () => {
+    try {
+      if (!user) {
+        await signInWithGoogle()
+      }
+      router.push("/dashboard")
+    } catch (error) {
+      console.error("Erro ao iniciar:", error)
+      // Aqui você pode adicionar uma notificação para o usuário, se quiser
+    }
+  }
 
   return (
     <header className="bg-background/80 backdrop-blur-md border-b border-border sticky top-0 z-50">
@@ -45,7 +58,7 @@ export function SiteHeader() {
               </Button>
             ) : (
               <Button
-                onClick={() => router.push("/dashboard")}
+                onClick={handleStartNow}
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
               >
                 Começar Agora
