@@ -40,31 +40,31 @@ Motivacional.IA é uma aplicação web que gera mensagens motivacionais personal
 ### Instalação
 
 1. Clone o repositório:
-   \`\`\`bash
+   ``
    git clone https://github.com/seu-usuario/motivacional-ia.git
    cd motivacional-ia
-   \`\`\`
+   ``
 
 2. Instale as dependências:
-   \`\`\`bash
+   ``
    npm install
    # ou
    yarn install
-   \`\`\`
+   ``
 
 3. Configure as variáveis de ambiente:
    Crie um arquivo `.env.local` na raiz do projeto com o seguinte conteúdo:
-   \`\`\`
+   ``
    FASTAPI_URL=http://0.0.0.0:3333/create
-   \`\`\`
+   ``
    Substitua o URL pelo endereço do seu servidor FastAPI.
 
 4. Inicie o servidor de desenvolvimento:
-   \`\`\`bash
+   ``
    npm run dev
    # ou
    yarn dev
-   \`\`\`
+   ``
 
 5. Acesse a aplicação em [http://localhost:3000](http://localhost:3000)
 
@@ -94,8 +94,8 @@ motivacional-ia/
 A aplicação se comunica com um servidor FastAPI para processar as informações do formulário e gerar mensagens motivacionais personalizadas. A comunicação é feita através de uma API Route do Next.js (`/api/motivational-message`), que envia os dados do formulário para o endpoint FastAPI (`/create`).
 
 ### Formato da Requisição
-
-``json
+json
+``
 {
   "name": "Nome do usuário",
   "how_you_feel_currently": "Como o usuário se sente atualmente",
@@ -108,8 +108,8 @@ A aplicação se comunica com um servidor FastAPI para processar as informaçõe
 ``
 
 ### Formato da Resposta
-
-``json
+json
+``
 {
   "nome": "Nome do usuário",
   "mensagem": "Mensagem motivacional personalizada"
